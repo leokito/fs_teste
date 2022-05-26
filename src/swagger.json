@@ -2,7 +2,7 @@
     "openapi": "3.0.0",
     "info": {
       "title": "Common User App",
-      "description": "This is a sample server for a pet store.",
+      "description": "A user register api.",
       "contact": {
         "name": "API Support",
         "url": "http://www.example.com/support",
@@ -13,7 +13,7 @@
   
     "servers": [
       {
-        "url": "http://localhost:8080/api/",
+        "url": "http://localhost:8080/api/v1",
         "description": "Users"
       }
     ],

@@ -41,3 +41,6 @@ Para popular o banco de dados com alguns dados pré determinados para testes:
 ``` yarn knex seed:make 001_users```
 
 
+Para acessar a documentação, acessar o endpoint:
+
+```http://localhost:8080/api/docs```

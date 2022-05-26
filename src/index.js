@@ -7,7 +7,7 @@ import swaggerUiExpress from 'swagger-ui-express';
 import swaggerDocument from './swagger.json'
 
 app.use(
-    "/api-documentation",
+    "/api/docs",
     swaggerUiExpress.serve,
     swaggerUiExpress.setup(swaggerDocument)
   );

@@ -5,12 +5,12 @@ const route = Router();
 
 export const AppRoutes = (app) => {
     
-    route.post("/users", createUser)
-    route.get("/users", getAll)
-    route.get("/users/:user_id", getById)
-    route.put("/users/:user_id", updateUser)
-    route.delete("/users/:user_id", deleteUser)
-    route.delete("/users", deleteAll)
+    route.post("v1/users", createUser)
+    route.get("v1/users", getAll)
+    route.get("v1/users/:user_id", getById)
+    route.put("v1/users/:user_id", updateUser)
+    route.delete("v1/users/:user_id", deleteUser)
+    route.delete("v1/users", deleteAll)
 
     app.use("/api", route)
 };
