@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    environment: 
+      POSTGRES_USER: postgres
+      POSTGRES_DB: contele_test
+      POSTGRES_PASSWORD: superpassword
+    ports:
+      - "5429:5432"

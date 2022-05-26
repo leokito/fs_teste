@@ -3,6 +3,15 @@ import { routes } from "./routes";
 
 const app = express();
 
+import swaggerUiExpress from 'swagger-ui-express';
+import swaggerDocument from './swagger.json'
+
+app.use(
+    "/api-documentation",
+    swaggerUiExpress.serve,
+    swaggerUiExpress.setup(swaggerDocument)
+  );
+
 routes(app);
 
 export default app;
